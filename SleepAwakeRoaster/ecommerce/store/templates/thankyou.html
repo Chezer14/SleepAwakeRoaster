@@ -1,0 +1,16 @@
+{% extends 'layout.html'%}
+{% load static %}
+
+{%block content%}
+<div class='container'>
+    <div class="jumbotron my-4">
+        <h1 class="display-4">Thank You!</h1>
+        <p class="lead">ดำเนินการเสร็จสิ้น สามารถรอรับสินค้าตามที่อยู่จัดส่ง ขอบคุณที่ใช้บริการ</p>
+        <hr class="my-4">
+        <p>Completed, You can wait to receive the product at the delivery address. Thank you for using the service.</p>
+        <p class="lead">
+        <a class="btn btn-primary btn-lg" href="{%url 'home' %}" role="button">หน้าแรก</a>
+        </p>
+    </div>
+</div>
+{%endblock%}
