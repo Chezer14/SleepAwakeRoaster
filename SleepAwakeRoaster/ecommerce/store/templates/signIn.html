@@ -1,0 +1,17 @@
+{% extends 'layout.html'%}
+{% load humanize %}
+{% load crispy_forms_tags %}
+{%block content%}
+
+<div class="container">
+        <h2 align="centet">ลงชื่อเข้าใช้ระบบ</h2>
+        <form method="post">
+            <!-- ป้องกันการhack -->
+            {% csrf_token %}
+            {{form|crispy}}
+            <input type="submit" value='login' class='btn btn-success'>
+        </form>
+</div>
+
+
+{%endblock%}
